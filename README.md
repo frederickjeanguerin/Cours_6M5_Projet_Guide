@@ -15,9 +15,9 @@ Réalisé dans le cadre du cours *420-6M5-ST - Projet intégrateur* à la sessio
 
 > Dites quels sont le ou les membre de votre équipe.
 
-## Documentations
+## Documentation
 
-- Charte du projet
+- [Charte du projet](documentation/charte.md)
 - Fonctionnalités
   - Cas d'utilisation
 - Maquettes
