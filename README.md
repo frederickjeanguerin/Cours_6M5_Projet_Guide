@@ -1,6 +1,6 @@
-# Projet Compte-Personne
+# Projet Calculatrice Scientifique
 
-*Un outil insdispensable pour tout surveillant de salle.*
+*Un outil insdispensable pour tout esprit scientifique sérieux.*
 
 Réalisé dans le cadre du cours *420-6M5-ST - Projet intégrateur* à la session *Hiver 2024*.
 

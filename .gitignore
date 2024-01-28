@@ -1,0 +1,4 @@
+
+# Ce truc est tout le temps en train d'être modifié par PyCharm
+#   donc on demande à Git d'arrêter de le suivre.
+.idea/workspace.xml
