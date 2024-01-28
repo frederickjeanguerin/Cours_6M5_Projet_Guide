@@ -70,6 +70,7 @@ Il y a une différence entre les math pures et les math réalisées
 par informatique, mais nous n'avons pas appris cela dans nos cours
 (à part un peu en math discrètes).
 Réaliser cette app nous permettra de comprendre comment ça marche.
+On pourrait même implémenter nos propres algos de calculs.
 
 ### 2. Interface complexe
 
@@ -105,7 +106,18 @@ des petites interfaces faciles. Là ce sera sensiblement plus compliqué.
 
 ## Risques et défis
 
-- La calculatrice pour
+### 1. Manquer de temps pour tout faire.
+Il y a beaucoup de fonctionnalités et il est plus que possible
+que le temps finisse par manquer pour tout faire.
 
+### 2. Utilisation de la mauvaise technologie.
+Pour le moment, nous pensons utiliser Kivy pour réaliser l'interface, 
+mais nous ne connaissons pas encore vraiment cette technologie, et il se pourrait
+qu'elle s'avère infructueuse.
+
+> Identifiez les principaux risques et défis associés à votre
+> projet. Expliquez pourquoi dans chaque cas.
+
+---
 
 Retour au [README](../README.md).
