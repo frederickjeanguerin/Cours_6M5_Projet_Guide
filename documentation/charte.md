@@ -118,6 +118,27 @@ qu'elle s'avère infructueuse.
 > Identifiez les principaux risques et défis associés à votre
 > projet. Expliquez pourquoi dans chaque cas.
 
+## Références additionnelles
+
+1. [Introduction to Numerical Methods](https://ocw.mit.edu/courses/18-335j-introduction-to-numerical-methods-spring-2019/)
+   - Comment créer nos propres algos de calculs numériques.
+   - Cours du MIT, par prof. Steven G. Johnson
+2. [Theming Kivy](https://github.com/kivy/kivy/wiki/Theming-Kivy)
+   - Comment il pourrait être possible de skinner une app Kivy.
+   - Page GitHub par Yuri Ivanov.
+
+> Énumérez ici les références additionnelles que vous avez 
+> consultées ou qui pourraient vous servir d'inspiration
+> et qui n'ont pas été citées précédemment.
+> Par exemple:
+> - Des vidéos YouTube sur des méthodes ou des technologies ou des sujets particuliers.
+> - Des sites web.
+> - Des livres ou autres documentations non-numériques.
+> 
+> Si la référence est numérique, ajoutez le lien vers celle-ci.
+> Dans tous les cas, indiquez l'auteur (ou les auteurs) le cas échéant
+> et ajoutez une brève description du contenu.
+
 ---
 
 Retour au [README](../README.md).
