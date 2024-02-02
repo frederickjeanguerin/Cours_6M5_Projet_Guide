@@ -21,5 +21,6 @@ Réalisé dans le cadre du cours *420-6M5-ST - Projet intégrateur* à la sessio
 - Fonctionnalités
   - Cas d'utilisation
 - Maquettes
+- Données
 
 > Ajoutez les liens vers les documents concernés.
