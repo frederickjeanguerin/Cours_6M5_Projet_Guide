@@ -19,8 +19,8 @@ Réalisé dans le cadre du cours *420-6M5-ST - Projet intégrateur* à la sessio
 
 - [Charte du projet](documentation/charte.md)
 - [Fonctionnalités](documentation/fonctionnalites.md)
-  - Cas d'utilisation
-- [Maquettes](documentation/cas-d-utilisation.md)
+  - [Cas d'utilisation](documentation/cas-d-utilisation.md)
+- Maquettes
 - Données
 
 > Ajoutez les liens vers les documents concernés.

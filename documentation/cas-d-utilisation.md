@@ -33,28 +33,54 @@ title: Cas d'utilisations (Calculatrice Scientifiques)
 flowchart LR
     
     %% Définir d'abord les acteurs
+    %% Il n'y a pas de stickman en mermaid. 
+    %% Mais on peut le simuler avec un caractère coréen
     user(["<span style='font-size:200%'>웃</span><br> Utilisateur"])
+    %% Ou encore utiliser un émoji (décommenter la ligne ci-dessous)
     %% user(["<span style='font-size:200%'>👤</span><br> Utilisateur"])
     stockage[(stockage)]
     
     %% Définir ensuite les cas ou fonctionnalités du "système"
     subgraph système ["&nbsp;"]
-        %% identifier les cas faisant partie du PMV
+        %% Identifier les cas faisant partie du PMV
         subgraph PMV
             arithmétique-classique
+            %% En principe, un use case devrait être un groupe verbal
+            %% Donc le cas ci-dessus aurait du être libellé ainsi:
+            %% arithmétique-classique("Effectuer une opération<br>arithmétique classique")
         end
+        
+        %% Ajouter ensuite les cas qui ne font pas partie du PMV
         arithmétique-scientifique
         parenthèses
         rémanence
+        
+        %% Acteurs internes au système
+        %% Par exemple une intelligence artificielle pour remplacer un utilisateur.
+        %% Plus ou moins pertinent pour une calculatrice mais pourrait vous être utile.
+        IA(["<span style='font-size:200%'>🤖</span><br> IA"])
     end
     
     %% Définir les liens entre les acteurs et les cas
+    %% L'ordre est important et décidera si l'acteur sera positionné
+    %%      à gauche ou à droite du système.
+    %% Par convention on positionne l'acteur principal à gauche
+    %%      et les acteurs secondaires à droite.
     user --- arithmétique-classique
     user --- parenthèses & arithmétique-scientifique
     rémanence --- stockage
-    
+
+    %% Il n'y a pas de lien d'héritage en mermaid
+    %% On peut le remplacer pour un lien pointillé avec texte explicatif.
+    %% Le triangle (◀ ou ▶) indique la direction de lecture
+    user -.-|◀ simule| IA 
+
     %% Définir au besoin des styles particulier
-    style PMV fill:#00F
+    %% La couleur doit être une couleur CSS valide 
+    %% -> https://www.w3schools.com/cssref/css_colors.php.
+    style PMV fill:blue
+    %% Ou alors hexadécimale à 3 ou 6 chiffres
+    style stockage fill:#060
 ```
 
 ---
