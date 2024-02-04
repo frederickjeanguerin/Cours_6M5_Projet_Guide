@@ -21,6 +21,10 @@ Réalisé dans le cadre du cours *420-6M5-ST - Projet intégrateur* à la sessio
 - [Fonctionnalités](documentation/fonctionnalites.md)
   - [Cas d'utilisation](documentation/cas-d-utilisation.md)
 - Maquettes
+  - [Figma](https://www.figma.com/file/eHEL8KJsriX3ClaVqRW2a3/Essai-de-base?type=design&mode=design&t=rVDwXlu6kNPg6dbP-1) (TODO interface) 
+  - Flowchart (TODO exemple de flowchart)
 - Données
 
 > Ajoutez les liens vers les documents concernés.
+
+> Concernant les maquettes, supprimez celle que vous ne ferez pas.
