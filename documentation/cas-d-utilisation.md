@@ -35,13 +35,13 @@ flowchart LR
     %% Définir d'abord les acteurs
     %% Il n'y a pas de stickman en mermaid. 
     %% Mais on peut le simuler avec un caractère coréen
-    user(["<span style='font-size:200%'>웃</span><br> Utilisateur"])
+    user(["웃 Utilisateur"])
     %% Ou encore utiliser un émoji (décommenter la ligne ci-dessous)
-    %% user(["<span style='font-size:200%'>👤</span><br> Utilisateur"])
+    %% user(["👤 Utilisateur"])
     stockage[(stockage)]
     
     %% Définir ensuite les cas ou fonctionnalités du "système"
-    subgraph système ["&nbsp;"]
+    subgraph Système
         %% Identifier les cas faisant partie du PMV
         subgraph PMV
             arithmétique-de-base(Effectuer des calculs simples)
@@ -71,9 +71,9 @@ flowchart LR
     %% Définir au besoin des styles particulier
     %% La couleur doit être une couleur CSS valide 
     %% -> https://www.w3schools.com/cssref/css_colors.php.
-    style PMV fill:blue
+    style PMV fill:deepskyblue
     %% Ou alors hexadécimale à 3 ou 6 chiffres
-    style stockage fill:#060
+    style stockage fill:#0A0
 ```
 
 > Supposons qu'une IA peut elle-même effectuer des calculs...
@@ -84,16 +84,16 @@ flowchart LR
 title: Cas d'utilisations - Calculatrice Scientifiques avec IA
 ---
 flowchart LR
-    user(["<span style='font-size:200%'>웃</span><br> Utilisateur"])
+    user(["웃 Utilisateur"])
     stockage[(stockage)]
-    IA(["<span style='font-size:200%'>🤖</span><br> IA"])
-    UouIA(["<span style='font-size:200%'>웃🤖</span><br>Utilisateur ou IA"])
+    IA(["🤖 IA"])
+    UouIA(["Utilisateur ou IA"])
 
     %% liens entre les acteurs
     IA --> UouIA
     user --> UouIA
     
-    subgraph système ["&nbsp;"]
+    subgraph Système
         subgraph PMV
             arithmétique-de-base(Effectuer des calculs simples)
         end
@@ -115,8 +115,8 @@ flowchart LR
     user ---- invoquer-ia
     user ---- poursuivre
 
-    style PMV fill:blue
-    style stockage fill:#060
+    style PMV fill:deepskyblue
+    style stockage fill:#0A0
 ```
 
 > Explorer un sous-cas d'utilisation:
@@ -127,9 +127,9 @@ flowchart LR
 title: Sous-cas d'utilisations - Effectuer des calculs simples
 ---
 flowchart LR
-    user(["<span style='font-size:200%'>웃</span><br> Utilisateur"])
+    user(["웃 Utilisateur"])
     
-    subgraph système ["&nbsp;"]
+    subgraph Sous-Système
         additionner
         soustraire
         multiplier
