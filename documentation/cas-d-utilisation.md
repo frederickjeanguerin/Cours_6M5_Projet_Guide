@@ -26,7 +26,7 @@
 
 ```mermaid
 ---
-title: Cas d'utilisations (Calculatrice Scientifiques)
+title: Cas d'utilisations - Calculatrice Scientifiques
 ---
 %% Type de diagramme: flowchart
 %% Orientation du diagramme: LR (Left to right)
@@ -44,21 +44,18 @@ flowchart LR
     subgraph système ["&nbsp;"]
         %% Identifier les cas faisant partie du PMV
         subgraph PMV
-            arithmétique-classique
-            %% En principe, un use case devrait être un groupe verbal
-            %% Donc le cas ci-dessus aurait du être libellé ainsi:
-            %% arithmétique-classique("Effectuer une opération<br>arithmétique classique")
+            arithmétique-de-base(Effectuer des calculs simples)
         end
         
         %% Ajouter ensuite les cas qui ne font pas partie du PMV
-        arithmétique-scientifique
-        parenthèses
-        rémanence
+        arithmétique-scientifique(Effectuer des calculs scientifiques)
+        parenthèses(Ajouter des parenthèses)
         
-        %% Acteurs internes au système
-        %% Par exemple une intelligence artificielle pour remplacer un utilisateur.
-        %% Plus ou moins pertinent pour une calculatrice mais pourrait vous être utile.
-        IA(["<span style='font-size:200%'>🤖</span><br> IA"])
+        poursuivre("Poursuivre un calcul<br>au démarrage")
+        rémanence(Sauvegarder & Restaurer)
+
+        %% Un cas peut utiliser un autre cas
+        poursuivre -->|utilise| rémanence
     end
     
     %% Définir les liens entre les acteurs et les cas
@@ -66,14 +63,10 @@ flowchart LR
     %%      à gauche ou à droite du système.
     %% Par convention on positionne l'acteur principal à gauche
     %%      et les acteurs secondaires à droite.
-    user --- arithmétique-classique
+    user --- arithmétique-de-base
     user --- parenthèses & arithmétique-scientifique
     rémanence --- stockage
-
-    %% Il n'y a pas de lien d'héritage en mermaid
-    %% On peut le remplacer pour un lien pointillé avec texte explicatif.
-    %% Le triangle (◀ ou ▶) indique la direction de lecture
-    user -.-|◀ simule| IA 
+    user --- poursuivre
 
     %% Définir au besoin des styles particulier
     %% La couleur doit être une couleur CSS valide 
@@ -81,6 +74,76 @@ flowchart LR
     style PMV fill:blue
     %% Ou alors hexadécimale à 3 ou 6 chiffres
     style stockage fill:#060
+```
+
+> Supposons qu'une IA peut elle-même effectuer des calculs...
+> bien que ce soit un peu exagérer ici.
+
+```mermaid
+---
+title: Cas d'utilisations - Calculatrice Scientifiques avec IA
+---
+flowchart LR
+    user(["<span style='font-size:200%'>웃</span><br> Utilisateur"])
+    stockage[(stockage)]
+    IA(["<span style='font-size:200%'>🤖</span><br> IA"])
+    UouIA(["<span style='font-size:200%'>웃🤖</span><br>Utilisateur ou IA"])
+
+    %% liens entre les acteurs
+    IA --> UouIA
+    user --> UouIA
+    
+    subgraph système ["&nbsp;"]
+        subgraph PMV
+            arithmétique-de-base(Effectuer des calculs simples)
+        end
+        
+        invoquer-ia(Invoquer IA)
+        arithmétique-scientifique(Effectuer des calculs scientifiques)
+        parenthèses(Ajouter des parenthèses)
+        
+        poursuivre("Poursuivre un calcul<br>au démarrage")
+        rémanence(Sauvegarder & Restaurer)
+        poursuivre -->|utilise| rémanence
+    end
+    
+    UouIA --- arithmétique-de-base
+    UouIA --- parenthèses & arithmétique-scientifique
+    rémanence --- stockage
+    
+    %% liens plus longs pour équilibrer le diagramme
+    user ---- invoquer-ia
+    user ---- poursuivre
+
+    style PMV fill:blue
+    style stockage fill:#060
+```
+
+> Explorer un sous-cas d'utilisation:
+>> Utile prioritairement pour les cas complexes qui font partie du PMV.
+
+```mermaid
+---
+title: Sous-cas d'utilisations - Effectuer des calculs simples
+---
+flowchart LR
+    user(["<span style='font-size:200%'>웃</span><br> Utilisateur"])
+    
+    subgraph système ["&nbsp;"]
+        additionner
+        soustraire
+        multiplier
+        diviser
+        modulo("diviser (modulo)")
+        inverser("inverser additivement (négation)")
+        combiner(Enchaîner des opérations)
+        entrer(Entrer des nombres)
+        annuler(Annuler une opération)
+        reset(Remettre à zéro)
+    end
+
+    user --- additionner & soustraire & multiplier & diviser
+    user --- inverser & modulo & combiner & annuler & entrer & reset
 ```
 
 ---
