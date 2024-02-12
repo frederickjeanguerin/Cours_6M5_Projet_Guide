@@ -23,7 +23,7 @@ Réalisé dans le cadre du cours *420-6M5-ST - Projet intégrateur* à la sessio
 - Maquettes
   - [Figma](https://www.figma.com/file/eHEL8KJsriX3ClaVqRW2a3/Essai-de-base?type=design&mode=design&t=rVDwXlu6kNPg6dbP-1) (TODO interface) 
   - Flowchart (TODO exemple de flowchart)
-- Données
+- [Données](documentation/classes.md)
 
 > Ajoutez les liens vers les documents concernés.
 
