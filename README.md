@@ -29,4 +29,4 @@ Réalisé dans le cadre du cours *420-6M5-ST - Projet intégrateur* à la sessio
 
 > Concernant les maquettes, supprimez celle que vous ne ferez pas.
 
-> Test phase 3
+> Test phase 4
