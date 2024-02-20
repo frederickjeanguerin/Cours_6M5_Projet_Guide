@@ -28,3 +28,5 @@ Réalisé dans le cadre du cours *420-6M5-ST - Projet intégrateur* à la sessio
 > Ajoutez les liens vers les documents concernés.
 
 > Concernant les maquettes, supprimez celle que vous ne ferez pas.
+
+> Test phase 1
